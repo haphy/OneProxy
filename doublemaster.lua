@@ -20,7 +20,7 @@ function rewrite_query( packet )
 		end
 	else
 		if proxy.connection.intran == 0 then
-			temp = proxy.connection.get_read
+			temp = proxy.connection.get_master
 		end
 	end
         if proxy.connection.backend_ndx == 0 then
