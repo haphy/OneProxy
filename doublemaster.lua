@@ -12,7 +12,7 @@ function rewrite_query( packet )
 				if temp ~= null and string.match(temp, "master") then
 					temp = proxy.connection.get_master
 				else
-					temp = proxy.connection.get_read
+					temp = proxy.connection.get_slave
 				end
 			else
 				temp = proxy.connection.get_master
